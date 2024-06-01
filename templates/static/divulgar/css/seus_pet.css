@@ -1,0 +1,44 @@
+.width80{
+    width: 80vw; 
+ }
+
+ .sidebar{
+    /*
+    CAMINHO URL:divulgar/seus_pets/
+    >Meus Pets = .sidebar
+    */
+        text-align: center;
+        padding: 10px;
+        background-color: #0E46A3;;
+        color: white;
+        height: 150vh;
+ }
+
+ .font-logo{
+    margin-left: 10px;
+    font-size: medium;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;   
+    text-align: right;   
+}
+
+.font-logo-name{
+    margin-right: 1px;
+    font-size: medium;
+    color: #ffffff;        
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    text-align: right;
+}
+ .tabela{
+/*
+CAMINHO URL:divulgar/seus_pets/
+>Quero Divulgar = .tabela
+*/
+     width: 100%;
+     margin-top: 20px;
+     background-color: #65c11a;
+ }
+ 
+ .tabela-linha{
+    
+     background-color: #e8e7e7;
+ }

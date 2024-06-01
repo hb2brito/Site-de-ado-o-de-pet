@@ -1,0 +1,99 @@
+.font-logo{
+    margin-left: 10px;
+    font-size: medium;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;   
+    text-align: center;  
+    
+}
+
+.font-logo-name{
+    margin-right: 1px;
+    font-size: medium;
+    color: #ffffff;        
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    text-align: right;
+}
+
+
+.bg-side{
+    text-align: center;
+    padding: 10px;
+    background-color: #0E46A3;
+    color: white;
+    height: 150vh;   
+
+}
+
+/* Define a largura e altura máximas do contêiner */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+/* Estilo do card */
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #f2eaea;
+    border: none;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.row-card {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.card-img-top {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.span-bold2 {
+    font-weight: bold;
+}
+
+/* Botões */
+.btn {
+    display: inline-block;
+    margin: 10px 5px;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-success {
+    background-color: #28a745;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+}
+
+
+

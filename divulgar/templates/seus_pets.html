@@ -1,0 +1,127 @@
+{% load static %}
+<!doctype html>
+<html lang="pt-BR">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Listar Pets</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="{% static 'usuarios/css/cadastro.css' %}" rel="stylesheet">
+        <link href="{% static 'divulgar/css/novo_pet.css' %}" rel="stylesheet">
+        <link href="{% static 'divulgar/css/seus_pet.css' %}" rel="stylesheet">
+
+        <style>
+            h2{
+                margin-right: 1px;
+                font-size: 25px;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+                text-align: right;  
+                        }
+            p{
+               font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+               font-size: small;
+               text-align: center;
+               color:rgb(18, 215, 215);
+               text-transform: uppercase 1px;
+               margin: 25px;
+               margin-right: 1px;
+               text-align-last: left;
+   
+       }
+
+   
+       </style>
+    </head>
+
+    
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2 bg-side">
+
+                    <div class='header'>
+                        <a href="{% url 'index' %}">
+                            <img src="{% static 'usuarios/img/logo_adote.png' %}" width="50%">
+                        </a>
+                        <br>
+                        <span class="font-logo">Seus Pet's</span>
+                        <hr>
+                                                
+                    </div>                      
+                        <p><a class="nav-link" href="{% url 'listar_pets' %}">Painel de Doação</a></p>                        
+                        <p><a class="nav-link" href="{% url 'novo_pet' %}">Novo Cadastro</a></p>
+                        <p><a class="nav-link" href="{% url 'ver_pedido_adocao' %}">Ver pedidos</a></p>
+                        <p><a class="nav-link" href="{% url 'sair' %}">Sair</a></p>                
+                    </div>
+
+                <div class="col-md ">
+                    <div class="wrapper">                        
+                        <div class="box">
+                            {% if messages %}
+                                <br>
+                                {% for message in messages %}
+                                    <div class="alert {{message.tags}}">
+                                        {{message}}
+                                    </div>
+                                {% endfor %}
+                            {% endif %}
+                            <h3 class="font-vinho">Pronto! Agora seu pet está no Painel de Doação.</h3>
+                            <hr>
+
+                             <table class="tabela" cellpadding="20">
+                                <tr>
+                                    <th>Foto</th>
+                                    <th>Nome</th>
+                                    <th>Raça</th>
+                                    <th>Status</th>
+                                    <th>Remover</th>
+                                </tr>
+                               
+                                {% for pet in pets%}
+                                <tr class="tabela-linha">
+                                    <td width="20%">
+                                        <img width="40%" src="{{pet.foto.url}}">
+                                    </td>
+                                    <td>
+                                        {{pet.nome}}
+                                    </td>
+                                    <td>
+                                        {{pet.raca}}
+                                        
+                                    </td>
+                                    <td>
+                                        {% if pet.status == "P" %}
+                                            <span class="badge text-bg-primary">Para adoção</span>
+                                        {% elif pet.status == "A" %}
+                                            <span class="badge text-bg-success">Adotado</span>
+                                        {% endif%}
+                            
+                                       
+                                        
+                                    </td>
+                                    <td>
+                                        <a href="{% url 'remover_pet' pet.id %}" class="btn btn-danger">REMOVER</a>
+                                    </td>
+                                </tr>
+                                {% endfor %}
+                                
+                                
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

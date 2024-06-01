@@ -1,0 +1,82 @@
+
+
+.btn-custom-secondary{
+    background-color: #32d9f6;
+    border: none;
+    box-shadow: 2px 2px 5px 1px rgb(189, 79, 6);
+    color: rgb(16, 11, 11);
+    font-size: 20px;
+    padding: 5px 20px 5px 20px;
+    border-radius: 10px;
+
+}
+
+.span-bold{
+    font-weight: bold;
+    font-size: medium;
+    
+    
+    
+    
+}
+
+.span-bold2{
+    font-weight: bold;
+    font-size: medium;
+    
+}
+
+.badge-lg{
+    font-size: 20px;
+    margin-top: 10px;
+    
+}
+
+.bg-side-plataforma{
+    background-color: #391D34;
+    color: white;
+    
+    
+
+}
+.font-logo{
+    margin-left: 10px;
+    font-size: medium;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;   
+    text-align: right;  
+    
+}
+
+.font-logo-name{
+    margin-right: 1px;
+    font-size: medium;
+    color: #ffffff;        
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    text-align: right;
+}
+
+
+.bg-side{
+    text-align: center;
+    padding: 10px;
+    background-color: #0E46A3;
+    color: white;
+    height: 150vh;   
+
+}
+
+
+.box {
+    /*
+    CAMINHO URL: divulgar/novo_pet/
+    >Coluna(div) = .box
+    obs; espaço(.box) em coluna dentro de outro espaço(.wrapper) para apresentar um formulario de cadastro.
+    */
+        padding:30px;
+        margin-top: 5%;
+        width: fit-content;
+        background: rgb(238, 238, 238);
+        box-shadow: 4px 4px 10px rgba(0,0,0,.3);
+        background-color: #9c9ea0;
+     
+    }

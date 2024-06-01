@@ -1,0 +1,83 @@
+
+
+.sidebar{
+/*
+CAMINHO URL: divulgar/novo_pet/
+>Novo Pet = .sidebar
+obs; pagina para cadastar um novo pet
+*/
+    text-align: center;
+    padding: 20px;
+    background-color: #928dc2;
+
+}
+.wrapper {
+/*
+CAMINHO URL: divulgar/novo_pet/
+>Coluna(div) = .wrapper
+obs; espaço em coluna para cadastar
+*/
+    
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #46c0ed;
+    margin-bottom: 3%;
+}
+
+.box {
+    /*
+    CAMINHO URL: divulgar/novo_pet/
+    >Coluna(div) = .box
+    obs; espaço(.box) em coluna dentro de outro espaço(.wrapper) para apresentar um formulario de cadastro.
+    */  
+     
+        border-radius: 10px 10px;
+        margin-bottom: 3%;
+
+        padding:30px;
+        margin-top: 5%;
+        width: fit-content;
+        background: rgb(238, 238, 238);
+        box-shadow: 4px 4px 10px rgba(0,0,0,.3);
+        background-color: #9c9ea0;
+     
+    }
+
+.font-vinho{
+/*
+CAMINHO URL: divulgar/novo_pet/
+>Coluna(div) = .font-vinho
+obs; espaço onde fica "Formulario do pet"
+*/
+    color: #f0e6e7;
+    background-color:#6c687086;
+    font-weight: bolder;
+    height: auto ;
+    width: auto;
+    margin: auto;
+    top:auto ;
+    
+}
+
+.font-logo{
+    margin-left: 10px;
+    font-size: medium;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;   
+    text-align: right;    
+    color: #f1f0ef;
+}
+
+.bg-side{
+    text-align: center;
+    padding: 10px;
+    background-color: #0E46A3;
+    color: white;
+    height: 150vh;   
+
+    
+
+}
+

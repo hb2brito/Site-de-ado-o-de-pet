@@ -1,0 +1,228 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<!--CABEÇALHO-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Adote</title>  
+        <title>Quem Somos - Doação de Pets</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+        <link href="{% static 'usuarios/css/style.css' %}" rel="stylesheet">
+
+        <style>
+            /* Defina a fonte desejada */
+                h1 {
+                    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+                    font-size: 200%;
+                    text-align: center;
+                    color:rgb(230, 227, 239);          
+                }
+                
+                h2 {
+                    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+                    font-size: 200%;
+                    text-align: left;
+                    color:rgb(255, 255, 255); 
+                             
+                }    
+
+                h2 a {
+                    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+                    font-size: 200%;
+                    text-align: right;
+                    color:rgb(255, 255, 255);          
+                }
+
+                a {
+                    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+                    font-size: 100%;
+                    text-align: right;
+                    color:rgb(255, 255, 255);          
+                }
+
+                p{
+                    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+                    font-size: 100%;
+                    text-align: left;
+                    color:rgb(168, 67, 67);          
+                }
+
+                p1{
+                    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+                    font-size: 100%;
+                    text-align: left;
+                    color:rgb(39, 15, 105);             
+                }
+
+                li{
+                    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+                    font-size: 100%;
+                    text-align: center;
+                    color:rgb(161, 42, 42); 
+
+                }
+                span{
+                
+                    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+                    font-size: 100%;
+                    text-align: right;
+                    color:rgb(255, 255, 255);          
+                
+                }
+            </style>
+    </head>
+
+
+
+<body>
+<!-- partial:index.partial.html -->
+<!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+
+    <header id="header">
+
+            <div class="logo">
+                
+                <img id="header-img" src="{% static 'usuarios/img/logo_adote.png' %}" alt="adote">
+                <h1><a href="{% url 'index' %}">Adote!</a></h1>
+
+            </div>
+           
+            <nav id="nav-bar">
+                <!--Configuração da caixa da pagina Index-->
+                <ul>
+                    <li><a class="nav-link" href="#about">Quem somos</a></li>
+                    <li><a class="nav-link" href="{% url 'cadastro' %}">Cadastre-se</a></li>
+                    <li><a class="nav-link" href="{% url 'login' %}">Login</a></li>
+                    <li><a class="nav-link" href="{% url 'admin:index' %}">Admin</a></li>
+                    <!--<li><a class="nav-link" href="#how-it-works">Como funciona</a></li>-->
+                    <!--<li><a class="nav-link" href="{% url 'sair' %}">Logout</a></li>-->                 
+                </ul> 
+
+            </nav>           
+           
+    </header>
+
+        
+    <div class="container">
+        
+        <section id="home">
+
+            <h1>Não compre, adote!</h1>
+            <h2>Encontre e adote seu amigo perfeito</h2>
+            <hr>
+            <a href="{% url 'login' %}">Comece!</a>
+
+        </section>
+
+        <section id="about">
+
+            <div>
+                <h2>Quem somos</h2>
+             
+                <p>Bem-vindo ao nosso universo dedicado aos corações peludos que tanto amamos. Aqui, na ADote, nossa missão é ir além do convencional. Somos apaixonados por conectar almas gentis aos animais de estimação que precisam de um lar amoroso.</p>
+                <br>
+                <p>Nossa jornada começou com um propósito claro: transformar vidas através da adoção responsável. Sabemos que cada animalzinho tem uma história única, e estamos aqui para garantir que eles sejam acolhidos, amados e cuidados como merecem.</p>
+                <br>
+                <p>Em um mundo onde tantos pets enfrentam a solidão e o abandono, buscamos ser a voz da compaixão. Desde cães brincalhões a gatinhos curiosos, cada um deles tem um lugar especial em nossos corações. E é por isso que trabalhamos incansavelmente para encontrar lares cheios de amor para cada patinha carente.</p>
+                <br>
+                <p>Nossa equipe é formada por amantes de animais dedicados, comprometidos em fazer a diferença a cada rabo abanando e a cada ronronar carinhoso. Juntos, construímos uma comunidade onde o bem-estar dos pets é prioridade absoluta.</p>
+                <br>
+                <p>Seja você um adotante em potencial, um voluntário entusiasmado ou um amigo dos animais em busca de uma causa nobre para apoiar, estamos felizes em recebê-lo em nossa família. Juntos, podemos fazer uma diferença real na vida de nossos amigos de quatro patas.</p>
+                <br>
+                <p>Junte-se a nós nesta jornada de amor, compaixão e resgate. Juntos, podemos criar um mundo onde cada pet é amado, protegido e valorizado como parte da família.</p>
+                <br>
+                <p>ADote - Porque cada patinha merece um lar feliz.</p>
+                              
+                <br>
+
+                <h2>10 RAZÕES PARA ADOTAR UM AMIGO</h2>
+                    <ul>
+                        <li><strong>Amor Incondicional:</strong> Animais de estimação oferecem amor e afeto incondicional. Eles estão sempre lá para você, independentemente de como foi o seu dia.</li>
+                        <li><strong>Companheirismo:</strong> Ter um animal de estimação pode combater a solidão. Eles são ótimos companheiros, prontos para interagir e passar tempo com você.</li>                    
+                        <li><strong>Melhora da Saúde Mental:</strong> Estudos mostram que interagir com animais de estimação pode reduzir o estresse, ansiedade e depressão. Eles são terapêuticos e podem melhorar significativamente o seu bem-estar emocional.</li>
+                        <li><strong>Atividade Física:</strong> Animais de estimação, especialmente cães, exigem atividade física regular, o que incentiva os donos a se exercitarem mais. Isso pode levar a um estilo de vida mais saudável e ativo.</li>
+                        <li><strong>Responsabilidade:</strong> Cuidar de um animal de estimação ensina responsabilidade, pontualidade e dedicação. Você precisa alimentá-los, dar-lhes atenção e garantir que estejam saudáveis e felizes.</li>
+                        <li><strong>Aprendizado:</strong> Ter um animal de estimação pode ensinar lições valiosas sobre empatia, comunicação e compreensão. Crianças que crescem com animais de estimação muitas vezes desenvolvem habilidades sociais e emocionais mais fortes.</li>
+                        <li><strong>Propósito:</strong> Animais de estimação podem oferecer um senso de propósito. Cuidar deles pode dar significado à sua vida diária e ajudá-lo a se sentir mais realizado.</li>
+                        <li><strong>Segurança e Proteção:</strong> Alguns animais de estimação, como cães, podem oferecer uma camada adicional de segurança e proteção para sua casa e família. Eles alertam sobre intrusos e podem até mesmo agir como um impedimento contra invasões.</li>
+                        <li><strong>Companhia para Idosos:</strong> Para os idosos, especialmente aqueles que vivem sozinhos, um animal de estimação pode ser um companheiro vital. Eles fornecem conforto e entretenimento, ajudando a prevenir o isolamento social.</li>
+                        <li><strong>Salvar uma Vida:</strong> Adotar um animal de estimação de um abrigo ou resgate significa que você está dando a ele uma segunda chance de ter uma vida feliz. Ao adotar, você está contribuindo para a redução do número de animais abandonados e dando a um animal necessitado um lar amoroso.</li>
+                        
+                    </ul>
+                    <br>
+                    <br>                
+    
+                <p>Saiba mais sobre por que é melhor adotar <a href="https://www.humanesociety.org/resources/top-reasons-adopt-pet">aqui</a>.</p>
+           
+            </div>
+
+        </section>
+
+        <section id="how-it-works">
+            <br>
+            <h2>A EXPERIÊNCIA ADOTE</h2>
+            <div>
+
+                <div class="step">
+                    <img id="sign-in" src="https://i.postimg.cc/JtWnm1mB/sign-in-icon.png" alt="sign in icon">
+                    <br>
+                    <h3>Cadastrar-se</h3>
+                    <p>Basta fazer um cadastro simples para dar luz ao novo capítulo da vida do seu amigo de quatro patas! Venha adotar ou divulgar, juntos vamos criar um futuro cheio de amor e alegria!</p>
+                </div>
+
+                <div class="step">
+                    <img id="hearts" src="https://i.postimg.cc/jnhBY6Tv/hearts-icon.png" alt="hearts icon">
+                    <br>
+                    <h3>Doação</h3>
+                    <p>Se você deseja dar um lar amoroso a um pet, basta clicar em 'Adotar' e aguardar a resposta do responsável. Estamos aqui para tornar esse processo simples e gratificante para você e seu futuro companheiro peludo!</p>
+                </div>
+
+                <div class="step">
+                    <img id="handshake" src="https://i.imgur.com/PsuiMgn.png" alt="handshake icon">
+                    <br>
+                    <h3>Divulgar</h3>
+                    <p>Se você deseja divulgar seu pet, basta cadastrá-lo e aguardar as solicitações. Você terá a liberdade de aprovar ou rejeitar cada uma delas, garantindo o melhor lar para seu companheiro.</p>
+                </div>
+
+                <div class="step">
+                    <img id="house" src="https://i.postimg.cc/D4hRNj98/house-icon.png" alt="house icon">
+                    <br>
+                    <h3>Adote!</h3>
+                    <p>Pra que comprar se você pode adotar!. Seu amigo ideal pode estar aqui conosco, pronto para encher sua vida de alegria e amor incondicional.</p>
+
+                </div>
+            </div>
+        </section>
+    
+        <section id="subscribe">
+            <h2>ASSINE NOSSA NEWSLETTER MENSAL</h2>
+
+            <form id="form" action="#">
+                <input name="email" id="email" type="email" placeholder="Ensira seu endereço de e-mail" required>
+                <input id="submit" type="submit" value="Se inscrever" class="btn">
+            </form>
+
+            <p>Nada de spam, nunca. Seu endereço será usado apenas para notícias sobre o ADote.</p>
+            <p>Você pode cancelar facilmente a assinatura a qualquer momento com um único clique.</p>
+
+        </section>
+
+        <footer>
+            
+            <ul>
+                <li><a href="#">Privacidade</a></li>
+                <li><a href="#">Termos & Condições</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+
+            <span>Copyright © 2024 Maristela</span>
+
+        </footer>
+    </div>
+<!-- partial -->
+  
+</body>
+</html>
